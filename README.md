@@ -1,32 +1,27 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
-
 ## Project Overview: Stage 1
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Overview
 
-### Specification
+This is the Stage 1 of the Restaurant Review project. We are using leaflet.js and Mapbox in order to create a map of a New York area. This map contains markers which correspond to restaurants in this area. The restaurants can be filtered by Neighborhood and Cuisine. The user can select any restraurant that he/she likes and will be directed to a new page viewing the restaurants' details and reviews. The project also features a Service Worker which allows to app to work in offline mode!
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## Running the project 
 
-### What do I do from here?
+In order to run the project we need to start up a simple HTTP server to serve up the site files on your local computer. To do so, we can use python. Follow the steps below to see how to do it.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
+1. Open a terminal (pressing windows button + R in PC or cmd + space and typing terminal and hitting return in MAC)
+2. In the terminal, type 'python -V' and hit enter to check the python version installed in your machine. If python is not installed, follow the link and install it: [website](https://www.python.org/)
+3. Through the terminal move to the projects folder using the cd command, for example  `cd c:/users/<yourusername>/desktop/restaurant-reviews`.
+4. Once in the project folder use the following command and the server will be up and running: 
+   For python 2.x use: `python -m SimpleHTTPServer 8000`.
+   For python 3.x use: `python3 -m http.server 8000`.
+   
 ## Leaflet.js and Mapbox:
 
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
 
 ### Note about ES6
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.. 
 
 
 
